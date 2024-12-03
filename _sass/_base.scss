@@ -115,17 +115,20 @@ aside {
     }
     @media (min-width: 768px) {
         background-color: transparent;
-        border-color: rgba(rgb(8, 8, 8), .3);
+        border-color: rgba(8, 8, 8, 0.3); /* 修复 rgba 语法 */
+        
         .navbar-header .navbar-brand {
-            color: rgba(rgb(7, 7, 7), .7);
+            color: rgba(7, 7, 7, 0.7);
             &:hover,
             &:focus {
                 color: rgb(248, 249, 248);
             }
         }
+        
         .nav {
             height: auto; /* 确保高度自适应内容 */
-          }
+        }
+        
         .nav > li > a,
         .nav > li > a:focus {
             color: rgb(4, 4, 4);
@@ -133,26 +136,42 @@ aside {
                 color: rgb(27, 144, 246);
             }
         }
+        
         &.affix {
             background-color: rgb(13, 13, 13);
-            border-color: rgba($theme-dark, .5);
+            border-color: rgba(0, 0, 0, 0.5); /* 修复 $theme-dark */
+            
             .navbar-header .navbar-brand {
-                color: $theme-primary;
+                color: rgb(33, 150, 243); /* 使用明确的颜色替代 $theme-primary */
                 font-size: 18px;
                 &:hover,
                 &:focus {
-                    color: darken($theme-primary, 10%);
+                    color: rgb(25, 118, 210); /* 调整颜色亮度 */
                 }
             }
+            
             .nav > li > a,
             .nav > li > a:focus {
-                color: $theme-dark;
+                color: rgba(255, 255, 255, 0.7); /* 替换 $theme-dark */
                 &:hover {
-                    color: $theme-primary;
+                    color: rgb(33, 150, 243); /* 替换 $theme-primary */
                 }
             }
         }
     }
+    @media (max-width: 768px) {
+        .navbar-header {
+            padding: 10px; /* 调整边距以适配小屏幕 */
+        }
+        
+        .navbar-brand {
+            font-size: 16px; /* 调整品牌文字大小 */
+        }
+        
+        .nav > li > a {
+            font-size: 14px; /* 调整导航链接的字体大小 */
+        }
+    }        
 }
 
 // Homepage Header
