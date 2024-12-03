@@ -155,7 +155,7 @@ aside {
     color: rgb(33, 150, 243); /* 替换 $theme-primary */
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .navbar-default .navbar-header {
     padding: 10px; /* 调整边距以适配小屏幕 */
   }
