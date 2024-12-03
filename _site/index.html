@@ -10,22 +10,22 @@
 
     <!-- Primary Meta Tags -->
     <meta name="title" content="C3NLP @ NAACL 2025">
-    <meta name="description" content="The MMCM workshop intends to draw visibility and interest to Multimodal Content Moderation, and establish a platform to foster in-depth idea exchange and collaboration.">
+    <meta name="description" content="">
     <meta name="author" content="">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:title" content="C3NLP @ NAACL 2025" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://c3nlp.github.io/" />
-    <meta property="og:image" content="https://raw.githubusercontent.com/multimodal-content-moderation/multimodal-content-moderation.github.io/main/img/header_cm_title.png" />
-    <meta name="og:description" content="The MMCM workshop intends to draw visibility and interest to Multimodal Content Moderation, and establish a platform to foster in-depth idea exchange and collaboration.">
+    <meta property="og:image" content="" />
+    <meta name="og:description" content="">
 
     <!-- Twitter -->
     <meta name="twitter:title" content="C3NLP @ NAACL 2025">
-    <meta name="twitter:description" content="The MMCM workshop intends to draw visibility and interest to Multimodal Content Moderation, and establish a platform to foster in-depth idea exchange and collaboration.">
-    <meta name="twitter:image" content="https://raw.githubusercontent.com/multimodal-content-moderation/multimodal-content-moderation.github.io/main/img/header_cm_title.png">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://c3nlp.github.io//">
+    <meta property="twitter:url" content="https://c3nlp.github.io/">
 
     <title>C3NLP @ NAACL 2025</title>
 
@@ -45,102 +45,88 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/main.css" type="text/css">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
 </head>
 
 
 <body id="page-top">
   <style>
-    /* 全局字体设置为 Arial */
     body {
         font-family: Arial, sans-serif;
     }
 
-    /* 确保导航条内容居中 */
     #mainNav .container-fluid {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    /* 居中 navbar-header 的内容 */
     .navbar-header {
         display: flex;
         align-items: center;
     }
 
-    /* 居中导航菜单项 */
     .navbar-collapse {
         display: flex;
         justify-content: center;
     }
 
-    /* 确保导航菜单项文字居中 */
     .navbar-nav > li > a {
         text-align: center;
     }
+
+    /* 增加响应式设计 */
+    @media (max-width: 767px) {
+        .navbar-nav {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .navbar-nav > li {
+            margin: 5px 0;
+        }
+
+        .navbar-collapse {
+            display: block;
+        }
+
+        .navbar-toggle {
+            display: block;
+        }
+    }
+
 </style>
 
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid" style="background-color: #f2f3f5">
-        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="navbar-header">
+            <!-- 导航栏折叠按钮 -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"></a>
+        </div>
+        <!-- 收起的导航项 -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li>
-                    <a class="page-scroll" href="#workshop">Home</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#cfp">Call For Papers</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#dates">Important Dates</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#organizers">Organizers</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#speakers">Speakers</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#previous">Previous Workshops</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#contact">Contact</a>
-                </li>
+                <li><a class="page-scroll" href="#workshop">Home</a></li>
+                <li><a class="page-scroll" href="#cfp">Call For Papers</a></li>
+                <li><a class="page-scroll" href="#dates">Important Dates</a></li>
+                <li><a class="page-scroll" href="#organizers">Organizers</a></li>
+                <li><a class="page-scroll" href="#speakers">Speakers</a></li>
+                <li><a class="page-scroll" href="#previous">Previous Workshops</a></li>
+                <li><a class="page-scroll" href="#contact">Contact</a></li>
             </ul>
         </div>
-        <!-- /.navbar-collapse -->
     </div>
-    <!-- /.container-fluid -->
 </nav>
 
+<!-- 加载jQuery和Bootstrap的JavaScript -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-</body>
-</html>
-
-  <!-- <section class="bg-primary" style="background-image: url('img/balloons.jpg'); background-size: cover; background-position: center center;" id="about">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading">WELCOME</h2>
-                <hr class="primary">
-               <p class="text-faded">
-                    <p>Welcome to the <strong>3<sup>rd</sup> Workshop on Cross-Cultural Considerations in NLP (C3NLP) </strong> Co-located with <a target="_blank" href="https://2025.naacl.org/" style="color: #ee1e24">NAACL 2025</a>!</p>
-                </p>
-            </div>
-        </div>
-    </div>
-</section> -->
-<style>
-    /* 设置 li 元素的字体大小 */
+  <style>
     .bg-gray li {
         font-size: 18px;
     }
@@ -162,14 +148,11 @@
 </section>
 
 
-
-<!-- 添加CSS -->
 <style>
-    /* 使用新的类名 .workshop-section */
     .workshop-section {
         position: relative;
         background-size: cover;
-        height: 450px; /* 或根据图片的实际高度进行调整 */
+        height: 450px; 
     }
 </style>
 
@@ -273,33 +256,33 @@
 .organizers-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* 水平居中 */
-    gap: 20px; /* 控制头像间距 */
+    justify-content: center; 
+    gap: 20px; 
 }
 
 .organizer {
-    flex: 1 1 calc(25% - 20px); /* 每行4列，可根据需求调整 */
-    max-width: 350px; /* 控制每个头像块的最大宽度 */
-    text-align: center; /* 文本居中 */
-    padding: 10px; /* 内边距 */
-    box-sizing: border-box; /* 包含内外边距计算 */
+    flex: 1 1 calc(25% - 20px); 
+    max-width: 350px; 
+    text-align: center; 
+    padding: 10px; 
+    box-sizing: border-box; 
 }
 
 .organizer img {
     width: 128px;
     height: 128px;
-    border-radius: 50%; /* 保持圆形 */
-    object-fit: cover; /* 确保图片适配圆形 */
+    border-radius: 50%; 
+    object-fit: cover;
 }
 
 .organizer h3 {
     font-size: 24px;
-    margin: 10px 0 5px; /* 标题与图片的间距 */
+    margin: 10px 0 5px; 
 }
 
 .organizer p {
     font-size: 16px;
-    line-height: 1.4; /* 调整职位信息的行高 */
+    line-height: 1.4; 
 }
 
 </style>
@@ -313,80 +296,6 @@
             </div>
         </div>
         <div class="row no-gutter">
-
-            <!-- <div class="col-md-3 text-center" id="O1" style="margin-bottom: 30px">
-                <a href="https://cs.stanford.edu/~vinod/" target="_blank">
-                    <img src="img/portfolio/vinod.png" style="border-radius: 50%;" alt=""
-                         width="128">
-                    <h3>Vinodkumar Prabhakaran</h3>
-                </a>
-                Senior Research Scientist<br> Google Research
-
-            </div>
-
-            <div class="col-md-3 text-center" id="O2" style="margin-bottom: 30px">
-                <a href="https://sunipa.github.io/" target="_blank">
-                    <img src="img/portfolio/sunipa.jpg" style="border-radius: 50%;" alt=""
-                         width="128">
-                    <h3>Sunipa Dev</h3></a>
-                    Senior Research Scientist<br> Google Research
-            </div>
-
-            <div class="col-md-3 text-center" id="O3" style="margin-bottom: 30px">
-                <a href="https://benotti.github.io/" target="_blank">
-                    <img src="img/portfolio/luciana.jpeg" style="border-radius: 50%;" alt=""
-                         width="128">
-                    <h3>Luciana Benotti</h3>
-                </a>
-                Associate Professor <br> Universidad Nacional de Córdoba
-            </div>
-
-            <div class="col-md-3 text-center" id="O4" style="margin-bottom: 0px">
-                <a href="https://danielhers.github.io/" target="_blank">
-                    <img src="img/portfolio/daniel.jpg" style="border-radius: 50%;" alt=""
-                         width="128">
-                    <h3>Daniel Hershcovich</h3>
-                </a>
-                Assistant Professor <br> University of Copenhagen
-            </div>
-
-            <div class="col-md-3 text-center" id="O5" style="margin-bottom: 0px">
-                <a href="https://lautel.github.io/" target="_blank">
-                    <img src="img/portfolio/laura.jpg" style="border-radius: 50%;" alt=""
-                         width="128">
-                    <h3>Laura Cabello</h3>
-                </a>
-                PhD Student <br> University of Copenhagen
-            </div>
-
-            <div class="col-md-3 text-center" id="O6" style="margin-bottom: 0px">
-                <a href="https://yongcaoplus.github.io/" target="_blank">
-                    <img src="img/portfolio/yong.png" style="border-radius: 50%;" alt=""
-                         width="128">
-                    <h3>Yong Cao</h3>
-                </a>
-                Postdoc Researcher <br> University of Tübingen
-            </div>
-            
-            <div class="col-md-3 text-center" id="O7" style="margin-bottom: 0px">
-                <a href="https://ifeadebara.com/" target="_blank">
-                    <img src="img/portfolio/ife.png" style="border-radius: 50%;" alt=""
-                         width="128">
-                    <h3>Ife Adebara</h3>
-                </a>
-                PhD Student <br> University of British Columbia
-            </div>
-
-            <div class="col-md-3 text-center" id="O8" style="margin-bottom: 0px">
-                <a href="https://lizhou21.github.io/" target="_blank">
-                    <img src="img/portfolio/li.jpg" style="border-radius: 50%;" alt=""
-                         width="128">
-                    <h3>Li Zhou</h3>
-                </a>
-                Postdoc Researcher <br> The Chinese University of Hong Kong, Shenzhen
-            </div> -->
-
-        
             <div class="organizers-container">
                 <div class="organizer">
                     <a href="https://cs.stanford.edu/~vinod/" target="_blank">
@@ -400,7 +309,6 @@
                     <h3>Sunipa Dev</h3></a>
                     <p>Senior Research Scientist<br> Google Research</p>
                 </div>
-                <!-- 添加更多头像 -->
                 <div class="organizer">
                     <a href="https://benotti.github.io/" target="_blank">
                     <img src="img/portfolio/luciana.jpeg" alt="Luciana" />
@@ -448,29 +356,29 @@
     .speakers-container {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center; /* 水平居中 */
-        gap: 20px; /* 控制头像间距 */
+        justify-content: center;
+        gap: 20px; 
     }
     .speaker {
-        flex: 1 1 calc(25% - 20px); /* 每行4列，可根据需求调整 */
-        max-width: 350px; /* 控制每个头像块的最大宽度 */
-        text-align: center; /* 文本居中 */
-        padding: 10px; /* 内边距 */
-        box-sizing: border-box; /* 包含内外边距计算 */
+        flex: 1 1 calc(25% - 20px);
+        max-width: 350px; 
+        text-align: center; 
+        padding: 10px; 
+        box-sizing: border-box; 
     }
     .speaker img {
         width: 128px;
         height: 128px;
-        border-radius: 50%; /* 保持圆形 */
-        object-fit: cover; /* 确保图片适配圆形 */
+        border-radius: 50%;
+        object-fit: cover; 
     }
     .speaker h3 {
         font-size: 24px;
-        margin: 10px 0 5px; /* 标题与图片的间距 */
+        margin: 10px 0 5px; 
     }
     .speaker p {
         font-size: 16px;
-        line-height: 1.4; /* 调整职位信息的行高 */
+        line-height: 1.4; 
     }
     </style>
 
@@ -482,7 +390,6 @@
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">INVITED SPEAKERS & PANELISTS</h2>
                 <hr class="primary">
-<!--                TBD-->
             </div>
         </div>
         <div class="row no-gutter">
@@ -520,21 +427,21 @@
 </section>
   <style>
 .workshop-link {
-    font-size: 18px; /* 设置字体大小为18px */
-    text-decoration: none; /* 去掉链接下划线 */
-    color: #71b0f4; /* 设置链接颜色 */
-    font-weight: bold; /* 设置链接为加粗 */
+    font-size: 18px;
+    text-decoration: none;
+    color: #71b0f4; 
+    font-weight: bold; 
 }
 
 .workshop-link:hover {
-    text-decoration: underline; /* 鼠标悬停时添加下划线 */
-    color: #2035f0; /* 悬停时改变颜色 */
+    text-decoration: underline; 
+    color: #2035f0; 
 }
 
 .emoji {
     display: inline-block;
-    margin-right: 10px; /* 向右偏移 */
-    vertical-align: middle; /* 保持符号和文字对齐 */
+    margin-right: 10px; 
+    vertical-align: middle;
 }
 
 
@@ -574,8 +481,8 @@
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 两列 */
-    gap: 15px; /* 间距 */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 15px;
     width: 100%;
     max-width: 800px;
 }
@@ -584,13 +491,13 @@
     width: 100%;
     height: auto;
     object-fit: cover;
-    aspect-ratio: 15 / 9; /* 保持图片比例 */
-    border-radius: 10px; /* 图片圆角 */
-    transition: transform 0.3s ease; /* 鼠标悬停动画 */
+    aspect-ratio: 15 / 9; 
+    border-radius: 10px; 
+    transition: transform 0.3s ease;
 }
 
 .gallery-item img:hover {
-    transform: scale(1.03); /* 略微放大效果 */
+    transform: scale(1.03); 
 }
 
 .all-link {
@@ -605,8 +512,6 @@
 .all-link:hover {
     color: #0056b3;
 }
-
-
 
 </style>
 

@@ -22,43 +22,55 @@
     .navbar-nav > li > a {
         text-align: center;
     }
+
+    /* 增加响应式设计 */
+    @media (max-width: 767px) {
+        .navbar-nav {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .navbar-nav > li {
+            margin: 5px 0;
+        }
+
+        .navbar-collapse {
+            display: block;
+        }
+
+        .navbar-toggle {
+            display: block;
+        }
+    }
+
 </style>
 
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid" style="background-color: #f2f3f5">
-        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="navbar-header">
+            <!-- 导航栏折叠按钮 -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"></a>
+        </div>
+        <!-- 收起的导航项 -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li>
-                    <a class="page-scroll" href="#workshop">Home</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#cfp">Call For Papers</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#dates">Important Dates</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#organizers">Organizers</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#speakers">Speakers</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#previous">Previous Workshops</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#contact">Contact</a>
-                </li>
+                <li><a class="page-scroll" href="#workshop">Home</a></li>
+                <li><a class="page-scroll" href="#cfp">Call For Papers</a></li>
+                <li><a class="page-scroll" href="#dates">Important Dates</a></li>
+                <li><a class="page-scroll" href="#organizers">Organizers</a></li>
+                <li><a class="page-scroll" href="#speakers">Speakers</a></li>
+                <li><a class="page-scroll" href="#previous">Previous Workshops</a></li>
+                <li><a class="page-scroll" href="#contact">Contact</a></li>
             </ul>
         </div>
-        <!-- /.navbar-collapse -->
     </div>
-    <!-- /.container-fluid -->
 </nav>
 
+<!-- 加载jQuery和Bootstrap的JavaScript -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-</body>
-</html>
