@@ -78,6 +78,10 @@ aside {
         color: $theme-primary;
         @include sans-serif-font;
         font-weight: 700;
+        height: auto; /* 自动适配内容高度 */
+        min-height: 50px; /* 设置最小高度 */
+        margin: 0;
+        padding: 0;
         text-transform: uppercase;
         &:hover,
         &:focus {

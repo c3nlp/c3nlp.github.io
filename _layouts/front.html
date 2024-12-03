@@ -16,5 +16,14 @@
   {% include previous.html %}
   {% include albums.html %}
   {% include contact.html %}
+
+  <script>
+    $(document).ready(function() {
+      // 强制关闭导航栏的折叠状态
+      $('.navbar-collapse').removeClass('in');
+      $('.navbar-collapse').css('height', 'auto'); // 确保高度适配内容
+    });
+  </script>
+  
 </body>
 </html>
