@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html,
 body {
   height: 100%;
@@ -85,6 +86,9 @@ aside {
 .navbar-default .navbar-header .navbar-brand:hover, .navbar-default .navbar-header .navbar-brand:focus {
   color: rgb(234.5776699029, 56.4951456311, 18.4223300971);
 }
+.navbar-default .nav {
+  overflow-x: hidden; /* 防止横向滚动 */
+}
 .navbar-default .nav > li > a,
 .navbar-default .nav > li > a:focus {
   text-transform: uppercase;
@@ -115,6 +119,9 @@ aside {
   }
   .navbar-default .navbar-header .navbar-brand:hover, .navbar-default .navbar-header .navbar-brand:focus {
     color: rgb(248, 249, 248);
+  }
+  .navbar-default .nav {
+    height: auto; /* 确保高度自适应内容 */
   }
   .navbar-default .nav > li > a,
   .navbar-default .nav > li > a:focus {

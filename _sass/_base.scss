@@ -85,6 +85,7 @@ aside {
         }
     }
     .nav {
+        overflow-x: hidden; /* 防止横向滚动 */
         > li {
             > a,
             > a:focus {
@@ -118,6 +119,9 @@ aside {
                 color: rgb(248, 249, 248);
             }
         }
+        .nav {
+            height: auto; /* 确保高度自适应内容 */
+          }
         .nav > li > a,
         .nav > li > a:focus {
             color: rgb(4, 4, 4);
