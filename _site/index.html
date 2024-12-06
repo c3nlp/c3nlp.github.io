@@ -118,8 +118,8 @@
                 <li><a class="page-scroll" href="#workshop" data-toggle="collapse" data-target=".navbar-collapse.in">Home</a></li>
                 <li><a class="page-scroll" href="#cfp" data-toggle="collapse" data-target=".navbar-collapse.in">Call For Papers</a></li>
                 <li><a class="page-scroll" href="#dates" data-toggle="collapse" data-target=".navbar-collapse.in">Important Dates</a></li>
-                <li><a class="page-scroll" href="#organizers" data-toggle="collapse" data-target=".navbar-collapse.in">Organizers</a></li>
                 <li><a class="page-scroll" href="#speakers" data-toggle="collapse" data-target=".navbar-collapse.in">Speakers</a></li>
+                <li><a class="page-scroll" href="#organizers" data-toggle="collapse" data-target=".navbar-collapse.in">Organizers</a></li>
                 <li><a class="page-scroll" href="#previous" data-toggle="collapse" data-target=".navbar-collapse.in">Previous Workshops</a></li>
                 <li><a class="page-scroll" href="#contact" data-toggle="collapse" data-target=".navbar-collapse.in">Contact</a></li>
             </ul>
@@ -259,6 +259,79 @@
     </div>
 </section>
   <style>
+    .speakers-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px; 
+    }
+    .speaker {
+        flex: 1 1 calc(25% - 20px);
+        max-width: 350px; 
+        text-align: center; 
+        padding: 10px; 
+        box-sizing: border-box; 
+    }
+    .speaker img {
+        width: 128px;
+        height: 128px;
+        border-radius: 50%;
+        object-fit: cover; 
+    }
+    .speaker h3 {
+        font-size: 24px;
+        margin: 10px 0 5px; 
+    }
+    .speaker p {
+        font-size: 16px;
+        line-height: 1.4; 
+    }
+    </style>
+
+<section class="bg-gray" id="speakers">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">INVITED SPEAKERS & PANELISTS</h2>
+                <hr class="primary">
+            </div>
+        </div>
+        <div class="row no-gutter">
+
+            <div class="speakers-container">
+                <div class="speaker"> 
+                    <a href="https://anthropology.as.virginia.edu/people/lise-dobrin" target="_blank">
+                        <img src="img/portfolio/lise.jpeg" style="border-radius: 50%;" alt=""
+                             width="128">
+                        <h3>Prof. Lise Dobrin</h3>
+                    </a>
+                    <p>Associate Professor<br>University of Virginia</p>
+                </div>
+                <div class="speaker"> 
+                    <a href="https://research.google/people/106467/?&type=google" target="_blank">
+                        <img src="img/portfolio/ben.png" style="border-radius: 50%;" alt=""
+                             width="128">
+                        <h3>Dr. Ben Hutchinson</h3>
+                    </a>
+                    <p>Research Scientist<br>Google's Research</p>
+                </div>
+                <div class="speaker"> 
+                    <a href="http://profiles.waikato.ac.nz/tetaka.keegan" target="_blank">
+                        <img src="img/portfolio/taka.jpeg" style="border-radius: 50%;" alt=""
+                             width="128">
+                        <h3>Prof. Te Taka Keegan</h3>
+                    </a>
+                    <p>Associate Professor<br>University of Waikato</p>
+                </div>
+            <br>
+            <p style="text-align: center; font-weight: bold; color:darkgrey">More Speakers will be announced soon.</p>
+            
+        </div>
+    </div>
+</section>
+  <style>
 
 .organizers-container {
     display: flex;
@@ -359,79 +432,6 @@
     </div>
 
 
-</section>
-  <style>
-    .speakers-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px; 
-    }
-    .speaker {
-        flex: 1 1 calc(25% - 20px);
-        max-width: 350px; 
-        text-align: center; 
-        padding: 10px; 
-        box-sizing: border-box; 
-    }
-    .speaker img {
-        width: 128px;
-        height: 128px;
-        border-radius: 50%;
-        object-fit: cover; 
-    }
-    .speaker h3 {
-        font-size: 24px;
-        margin: 10px 0 5px; 
-    }
-    .speaker p {
-        font-size: 16px;
-        line-height: 1.4; 
-    }
-    </style>
-
-<section class="bg-gray" id="speakers">
-
-    <div class="container">
-
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading">INVITED SPEAKERS & PANELISTS</h2>
-                <hr class="primary">
-            </div>
-        </div>
-        <div class="row no-gutter">
-
-            <div class="speakers-container">
-                <div class="speaker"> 
-                    <a href="https://anthropology.as.virginia.edu/people/lise-dobrin" target="_blank">
-                        <img src="img/portfolio/lise.jpeg" style="border-radius: 50%;" alt=""
-                             width="128">
-                        <h3>Prof. Lise Dobrin</h3>
-                    </a>
-                    <p>Associate Professor<br>University of Virginia</p>
-                </div>
-                <div class="speaker"> 
-                    <a href="https://research.google/people/106467/?&type=google" target="_blank">
-                        <img src="img/portfolio/ben.png" style="border-radius: 50%;" alt=""
-                             width="128">
-                        <h3>Dr. Ben Hutchinson</h3>
-                    </a>
-                    <p>Research Scientist<br>Google's Research</p>
-                </div>
-                <div class="speaker"> 
-                    <a href="http://profiles.waikato.ac.nz/tetaka.keegan" target="_blank">
-                        <img src="img/portfolio/taka.jpeg" style="border-radius: 50%;" alt=""
-                             width="128">
-                        <h3>Prof. Te Taka Keegan</h3>
-                    </a>
-                    <p>Associate Professor<br>University of Waikato</p>
-                </div>
-            <br>
-            <p style="text-align: center; font-weight: bold; color:darkgrey">More Speakers will be announced soon.</p>
-            
-        </div>
-    </div>
 </section>
   <style>
 .workshop-link {
