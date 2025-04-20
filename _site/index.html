@@ -116,11 +116,13 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right"> <!-- Add navbar-right to align items to the right -->
                 <li><a class="page-scroll" href="#workshop" data-toggle="collapse" data-target=".navbar-collapse.in">Home</a></li>
-                <li><a class="page-scroll" href="#cfp" data-toggle="collapse" data-target=".navbar-collapse.in">Call For Papers</a></li>
+                <li><a class="page-scroll" href="#cfp" data-toggle="collapse" data-target=".navbar-collapse.in">CFP</a></li>
                 <li><a class="page-scroll" href="#dates" data-toggle="collapse" data-target=".navbar-collapse.in">Important Dates</a></li>
+                <li><a class="page-scroll" href="#schedule" data-toggle="collapse" data-target=".navbar-collapse.in">Schedule</a></li>
                 <li><a class="page-scroll" href="#speakers" data-toggle="collapse" data-target=".navbar-collapse.in">Speakers</a></li>
                 <li><a class="page-scroll" href="#organizers" data-toggle="collapse" data-target=".navbar-collapse.in">Committee</a></li>
                 <li><a class="page-scroll" href="#sponsorship" data-toggle="collapse" data-target=".navbar-collapse.in">Sponsorship</a></li>
+                <li><a class="page-scroll" href="#accept_papers" data-toggle="collapse" data-target=".navbar-collapse.in">Aceepted Papers</a></li>
                 <li><a class="page-scroll" href="#previous" data-toggle="collapse" data-target=".navbar-collapse.in">Previous Workshops</a></li>
                 <li><a class="page-scroll" href="#contact" data-toggle="collapse" data-target=".navbar-collapse.in">Contact</a></li>
             </ul>
@@ -177,14 +179,9 @@
     <div class="container text-center">
         <div class="row">
           <div class="call-to-action">
-            
-            <br>
+            <!-- <br>
             <p class="bg-gray highlight-box" align="justify"><b>Funding Support for Workshop Attendance</b>: We are pleased to offer limited funding support for workshop attendees. If you require financial assistance, please fill out the <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSf8J6pg_GWZ2tjlhuWQEaBEnqBCP3fQy-GOettBmQ-Wmr8TrA/viewform?usp=dialog">Application Form</a> by March 30 at 23:59 AoE. We will notify applicants before the early registration deadline. </p>
-            <!-- <p class="bg-gray" align="justify"><b>Funding Support for Workshop Attendance </b></p> -->
-            <!-- <ul class="bg-gray" align="left">
-                <li> We are pleased to offer limited funding support for workshop attendees. If you require financial assistance, please fill out the application form by March 30 at 23:59 AoE. We will notify applicants before the early registration deadline. <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSf8J6pg_GWZ2tjlhuWQEaBEnqBCP3fQy-GOettBmQ-Wmr8TrA/viewform?usp=dialog">Application Form</a> </li>
-            </ul> -->
-            <br>
+            <br> -->
               <h2>CALL FOR PAPERS</h2>
               <hr class="primary">
           </div>
@@ -267,17 +264,17 @@
                     </tr>
                     <tr style="border-bottom: 1px solid black; height: 30px">
                         <td rowspan="2" style="text-align: left;">Already accepted/published (Non-archival)</td>
-                        <td><b>Submission deadline: March 18, 2025</b></td>
+                        <td>Submission deadline: March 18, 2025</td>
                     </tr>
                     <tr style="border-bottom: 1px solid black; height: 30px">
                         <td>Notification of acceptance: March 25, 2025</td>
                     </tr>
                     <tr style="border-bottom: 1px solid black; height: 30px">
                         <td rowspan="2" style="text-align: left;">Workshop</td>
-                        <td><b>Registration: <a href="https://2025.naacl.org/registration/registration/", target="_blank">Link</a> (Early registration deadline: April 7, 2025)</b></h></td>
+                        <td>Registration: <a href="https://2025.naacl.org/registration/registration/", target="_blank">Link</a> (Early registration deadline: April 7, 2025)</h></td>
                     </tr>
                     <tr style="border-bottom: 1px solid black; height: 30px">
-                        <td>Workshop: May 4, 2025</td>
+                        <td><b>Workshop: May 4, 2025</b></td>
                     </tr>
                 </tbody>
             </table>
@@ -290,94 +287,248 @@
     </div>
 </section>
   <style>
-    .speakers-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px; 
+    .schedule-section {
+        position: relative;
+        background-size: cover;
+        height: auto;
+        padding: 50px 0;
     }
-    .speaker {
-        flex: 1 1 calc(25% - 20px);
-        max-width: 350px; 
-        text-align: center; 
-        padding: 10px; 
-        box-sizing: border-box; 
+    .highlight-box {
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        border-radius: 8px;
+        padding: 15px;
+        background-color: #f8f9fa;
+        margin-bottom: 15px;
     }
-    .speaker img {
-        width: 128px;
-        height: 128px;
-        border-radius: 50%;
-        object-fit: cover; 
+    .iframe-container {
+        position: relative;
+        overflow: hidden;
+        padding-top: 56.25%; /* 16:9 Aspect Ratio */
     }
-    .speaker h3 {
-        font-size: 24px;
-        margin: 10px 0 5px; 
+    .iframe-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
     }
-    .speaker p {
-        font-size: 16px;
-        line-height: 1.4; 
-    }
-    </style>
+</style>
 
-<section class="bg-gray" id="speakers">
-
+<section class="bg-gray schedule-section" id="schedule">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Program Schedule</h2>
+                <hr class="primary">
+            </div>
+        </div>
+        <div class="row no-gutter">
+            <div class="col-md-12 text-center">
+                <!-- <p class="bg-gray highlight-box" align="justify">
+                    Below is the detailed program schedule for the <strong>3<sup>rd</sup> Workshop on Cross-Cultural Considerations in NLP (C3NLP)</strong>. The schedule is subject to updates, so please check back regularly for the latest information.
+                </p> -->
+                <div class="iframe-container">
+                    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTCP6W5x6F1pxSFOFhXQKTSutFabhP8htoILcofBNWvpVIHxqQMo5tzMHnOgRAQW43NPkSxui4IJgh3/pubhtml?gid=330122627&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+  <section class="bg-gray" id="speakers">
     <div class="container">
-
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">INVITED SPEAKERS & PANELISTS</h2>
                 <hr class="primary">
             </div>
         </div>
-        <div class="row no-gutter">
 
-            <div class="speakers-container">
-                <div class="speaker"> 
-                    <a href="https://anthropology.as.virginia.edu/people/lise-dobrin" target="_blank">
-                        <img src="img/portfolio/lise.jpeg" style="border-radius: 50%;" alt=""
-                             width="128">
-                        <h3>Lise Dobrin</h3>
-                    </a>
-                    <p>Associate Professor<br>University of Virginia</p>
+        <!-- Speaker 5:  -->
+        <div class="row speaker-profile">
+            <div class="col-md-3 text-center">
+                <a href="https://scholar.google.com/citations?user=lS1Glo4AAAAJ" target="_blank">
+                <img src="img/portfolio/elisabeth.jpg" class="speaker-img" alt="">
+                <h3 class="speaker-name">Elisabeth A. Mager Hois</h3>
+                <p class="speaker-position">Professor<br>Universidad Nacional Autónoma de México</p></a>
+            </div>
+            <div class="col-md-9">
+                <div class="speaker-content">
+                    <div class="bio">
+                        <p><strong>Elisabeth A. Mager Hois</strong> holds a Bachelor's degree in Pedagogy (University of Munich, 1971), a Bachelor’s degree in Social Anthropology (ENAH, 2004), a Master's degree in Mexico-United States Studies (UNAM, 2001), and a PhD in Anthropology (UNAM, 2008). She is a national researcher at the SNI (National Institute of National Research) and a Professor-Researcher of German at the FES Acatlán-UNAM. She won the CISAN Award (2009) and the Honorable Mention of the Aguirre Beltrán Chair by CIESAS of the Gulf and the University of Veracruz (2010). She has published several books: Struggle and Resistance of the Kickapoo Tribe, Kickapoo, Casinos and Power: The Kickapoo Lucky Eagle Casino Case, and Relationship between Dialectics and Social Consciousness in the Poetry of Bertolt Brecht, among others. She has written several articles and book chapters on group cohesion, assimilation, cultural assimilation, resistance and ethnic consciousness, migration, ideology and power, and polysynthetic languages, among others.</p>
+                    </div>
+                    <div class="talk-details">
+                        <p><strong>Title:</strong> Cultural Differences and Changes Among Native Americans and Their Importance for NLP
+                        </p>
+                        <p><strong>Abstract:</strong> In this talk, we present the cultural differences and changes among indigenous peoples compared to Western cultures. We will begin with a broad overview of key indigenous cultural aspects before focusing on specific case studies: the Kickapoo, Cahuilla, Wixárika, and Rarámuri communities. Here, we analyze some aspects of the political-religious structure (relationship between spirituality and politics), the social-ceremonial structure, and the socioeconomic activity of these peoples, as well as their changes over time. Ethical considerations are also of great importance when it comes to research on indigenous peoples. This also applies to research done for NLP. The traditions and beliefs of the different tribes and communities must be taken into account. The key is not to consider indigenous peoples as objects of research but rather to create a balance and integrate them into projects. Therefore, it is important that the researcher understands the culture of the indigenous communities to achieve objective results.
+                        </p>
+                    </div>
                 </div>
-                <div class="speaker"> 
-                    <a href="https://mbzuai.ac.ae/study/faculty/monojit-choudhury/" target="_blank">
-                        <img src="img/portfolio/monojit.jpg" style="border-radius: 50%;" alt=""
-                             width="128">
-                        <h3>Monojit Choudhury</h3>
-                    </a>
-                    <p>Professor<br>MBZUAI</p>
-                </div>
-                <div class="speaker"> 
-                    <a href="https://www.shutova.org/" target="_blank">
-                        <img src="img/portfolio/ekaterina.jpg" style="border-radius: 50%;" alt=""
-                             width="128">
-                        <h3>Ekaterina Shutova</h3>
-                    </a>
-                    <p>Associate Professor<br>University of Amsterdam</p>
-                </div>
-                <div class="speaker"> 
-                    <a href="http://isabelleaugenstein.github.io/" target="_blank">
-                        <img src="img/portfolio/isabelle.jpg" style="border-radius: 50%;" alt=""
-                             width="128">
-                        <h3>Isabelle Augenstein</h3>
-                    </a>
-                    <p>Professor<br>University of Copenhagen</p>
-                </div>
-                <div class="speaker"> 
-                    <a href="https://scholar.google.com/citations?user=lS1Glo4AAAAJ" target="_blank">
-                        <img src="img/portfolio/elisabeth.jpg" style="border-radius: 50%;" alt=""
-                             width="128">
-                        <h3>Elisabeth Maier</h3>
-                    </a>
-                    <p>Professor<br>Universidad Nacional Autónoma de México</p>
-                </div>
-            <br>
-            
+            </div>
         </div>
-    </div>
-</section>
 
+        <!-- Speaker 1: Monojit Choudhury -->
+        <div class="row speaker-profile">
+            <div class="col-md-3 text-center">
+                <a href="https://mbzuai.ac.ae/study/faculty/monojit-choudhury/" target="_blank">
+                <img src="img/portfolio/monojit.png" class="speaker-img" alt="">
+                <h3 class="speaker-name">Monojit Choudhury</h3>
+                <p class="speaker-position">Professor<br>MBZUAI</p></a>
+            </div>
+            <div class="col-md-9">
+                <div class="speaker-content">
+                    <div class="bio">
+                        <p><strong>Monojit Choudhury</strong> is a professor of Natural Language Processing at Mohommed Bin Zayed University of Artificial Intelligence (MBZUAI), Abu Dhabi. Prior to this, he was a principal scientist at Microsoft Research India and Microsoft Turing. Prof Choudhury's research interests lie in the intersection of NLP, Social and Cultural aspects of Technology use, and Ethics. In particular, he has been working on multilingual and multicultural aspects of large language models (LLMs), their use in low resource languages and making LLMs more inclusive and safer. Prof Choudhury takes a keen interest in popularizing linguistics and AI through puzzle solving; he is the general chair of Indian national linguistics Olympiad, the founding co-chair of Asia-Pacific linguistics Olympiad, and a founding board-member of International AI Olympiad. He holds a BTech and PhD degree in Computer Science and Engineering from IIT Kharagpur.</p>
+                    </div>
+                    <div class="talk-details">
+                        <p><strong>Title:</strong> Culturally Aware Machines: Why and when are they useful?</p>
+                        <p><strong>Abstract:</strong> Language, culture, and technology are deeply intertwined; any technology that aims to process or generate language must have a nuanced understanding of culture. Yet, culture is elusive, often defying concrete definition, which poses a profound challenge to NLP and AI research. While the NLP community has acknowledged this fact and taken initial steps by developing culture-specific benchmarks and identifying biases in large language models (LLMs), there remains a gap in addressing why cultural understanding matters for machines, and the real-world impact on users of culturally (un)aware machines. In this talk, I will ask and attempt to answer the following three questions: (1) What can we do better with AI systems that are culturally aware? (2) Why is modeling culture so complex, and what can we learn from psychology and anthropology? (3) How can LLMs, in turn, be leveraged as tools for studying and enhancing our understanding of cultures?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Speaker 2: Lise Dobrin -->
+        <div class="row speaker-profile">
+            <div class="col-md-3 text-center">
+                <a href="https://anthropology.as.virginia.edu/people/lise-dobrin" target="_blank">
+                <img src="img/portfolio/lise.jpeg" class="speaker-img" alt="">
+                <h3 class="speaker-name">Lise Dobrin</h3>
+                <p class="speaker-position">Associate Professor<br>University of Virginia</p></a>
+            </div>
+            <div class="col-md-9">
+                <div class="speaker-content">
+                    <div class="bio">
+                        <p>TBD</p>
+                    </div>
+                    <div class="talk-details">
+                        <p><strong>Title:</strong> TBD</p>
+                        <p><strong>Abstract:</strong> TBD</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Speaker 3: Ekaterina Shutova -->
+        <div class="row speaker-profile">
+            <div class="col-md-3 text-center">
+                <a href="https://www.shutova.org/" target="_blank">
+                <img src="img/portfolio/ekaterina.jpg" class="speaker-img" alt="">
+                <h3 class="speaker-name">Ekaterina Shutova</h3>
+                <p class="speaker-position">Associate Professor<br>University of Amsterdam</p></a>
+            </div>
+            <div class="col-md-9">
+                <div class="speaker-content">
+                    <div class="bio">
+                        <p><strong>Ekaterina Shutova</strong> is an Associate Professor at the ILLC, University of Amsterdam and a Visiting Associate Professor at Stanford University. At the ILLC, she leads the Amsterdam Natural Language Understanding Lab and the Natural Language Processing & Digital Humanities research unit. She received her PhD from the University of Cambridge, and then worked as a research scientist at the University of California, Berkeley. Ekaterina’s current research focuses on multilingual and multicultural NLP, generalisability and robustness of NLP models and LLM alignment. Her prominent service roles include Program Chair of ACL 2025, Senior Action Editor of ACL Rolling Review, Action Editor of Computational Linguistics and Demonstrations chair at EMNLP 2022. She is also an ELLIS scholar.
+                        </p>
+                    </div>
+                    <div class="talk-details">
+                        <p><strong>Title:</strong> TBD</p>
+                        <p><strong>Abstract:</strong> TBD</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Speaker 4: Isabelle Augenstein -->
+        <div class="row speaker-profile">
+            <div class="col-md-3 text-center">
+                <a href="http://isabelleaugenstein.github.io/" target="_blank">
+                <img src="img/portfolio/isabelle.jpg" class="speaker-img" alt="">
+                <h3 class="speaker-name">Isabelle Augenstein</h3>
+                <p class="speaker-position">Professor<br>University of Copenhagen</p></a>
+            </div>
+            <div class="col-md-9">
+                <div class="speaker-content">
+                    <div class="bio">
+                        <p><strong>Isabelle Augenstein</strong> is a Professor at the University of Copenhagen, Department of Computer Science, where she heads the Copenhagen Natural Language Understanding research group as well as the Natural Language Processing section. Her main research interests are fair and accountable NLP, including challenges such as explainability, factuality and bias detection. Prior to starting a faculty position, she was a postdoctoral researcher at University College London, and before that a PhD student at the University of Sheffield. In October 2022, Isabelle Augenstein became Denmark’s youngest ever female full professor. She currently holds a prestigious ERC Starting Grant on 'Explainable and Robust Automatic Fact Checking', as well as the Danish equivalent of that, a DFF Sapere Aude Research Leader fellowship on 'Learning to Explain Attitudes on Social Media’. She is a member of the Royal Danish Academy of Sciences and Letters, and co-leads the Danish Pioneer Centre for AI.</p>
+                    </div>
+                    <div class="talk-details">
+                        <p><strong>Title:</strong> Measuring cultural biases in LLM generations
+                        </p>
+                        <p><strong>Abstract:</strong> TBD</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <style>
+        .speaker-profile {
+            margin: 30px 0;
+            padding: 25px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            font-size: 10px;
+        }
+        
+        .speaker-profile:hover {
+            transform: translateY(-5px);
+        }
+        
+        .speaker-img {
+            border-radius: 50%;
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border: 5px solid #f5f5f5;
+            margin-bottom: 15px;
+        }
+        
+        .speaker-content {
+            text-align: justify;
+            line-height: 1.6;
+            font-size: 14px; /* Smaller base font size */
+        }
+
+        .speaker-name {
+            color: #2C3E50;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-size: 18px; /* Smaller name size */
+        }
+
+        .speaker-position {
+            color: #777;
+            margin-bottom: 15px;
+            font-size: 15px; /* Smaller position text */
+        }
+
+        .bio p {
+            font-size: 15px; /* Smaller biography text */
+            margin-bottom: 15px;
+        }
+
+        .talk-details h4 {
+            color: #1B60AA;
+            margin-bottom: 15px;
+            font-size: 16px; /* Smaller talk title */
+        }
+
+        .talk-details p {
+            font-size: 15px; /* Smaller abstract text */
+        }
+
+        /* Adjust paragraph spacing */
+        p {
+            margin-bottom: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .speaker-profile {
+                padding: 15px;
+                text-align: center;
+            }
+            
+            .speaker-content {
+                text-align: left;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</section>
   <style>
 
 .organizers-container {
@@ -648,6 +799,194 @@
       </div>
     </div>
   </section>
+  <style>
+    .workshop-section {
+        position: relative;
+        background-size: cover;
+        height: 450px; 
+    }
+    .highlight-box {
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        border-radius: 8px;
+        padding: 15px;
+        background-color: #f8f9fa;
+        margin-bottom: 15px;
+    }
+    .paper-title {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    .paper-author {
+        font-style: italic;
+        font-size: 18px; /* h2 equivalent size */
+        margin-bottom: 20px;
+        color: #555;
+    }
+    .paper-list {
+        text-align: left;
+        margin-bottom: 30px;
+    }
+    .paper-item {
+        margin-bottom: 25px;
+    }
+    .category-heading {
+        background-color: #f2f3f5;
+        padding: 10px 15px;
+        border-radius: 5px;
+        margin: 30px 0 20px 0;
+        font-weight: bold;
+        color: #2C3E50;
+    }
+</style>
+
+<section class="bg-gray" id="accept_papers">
+    <div class="container text-center">
+        <div class="row">
+          <div class="call-to-action">
+            <br>
+            <h2>ACCEPTED PAPERS</h2>
+            <hr class="primary">
+          </div>
+        </div>
+        
+        <div class="row no-gutter">
+            <div class="col-md-12">
+                <h3 class="category-heading">Archival</h3>
+                
+                <div class="paper-list">
+                    <div class="paper-item">
+                        <p class="paper-title">LLM Alignment for the Arabs: A Homogenous Culture or Diverse Ones.</p>
+                        <p class="paper-author">Amr Keleg</p>
+                    </div>
+                    
+                    <div class="paper-item">
+                        <p class="paper-title">Multi-Step Reasoning in Korean and the Emergent Mirage</p>
+                        <p class="paper-author">Guijin Son, Hyunwoo Ko and Dasol Choi</p>
+                    </div>
+                    
+                    <div class="paper-item">
+                        <p class="paper-title">Fair Summarization: Bridging Quality and Diversity in Extractive Summaries</p>
+                        <p class="paper-author">Sina Bagheri Nezhad, Sayan Bandyapadhyay and Ameeta Agrawal</p>
+                    </div>
+                    
+                    <div class="paper-item">
+                        <p class="paper-title">InspAIred: Cross-cultural Inspiration Detection and Analysis in Real and LLM-generated Social Media Data</p>
+                        <p class="paper-author">Oana Ignat, Gayathri Ganesh Lakshmy and Rada Mihalcea</p>
+                    </div>
+                    
+                    <div class="paper-item">
+                        <p class="paper-title">DaKultur: Evaluating the Cultural Awareness of Language Models for Danish with Native Speakers</p>
+                        <p class="paper-author">Max Müller-Eberstein, Mike Zhang, Elisa Bassignana, Peter Brunsgaard Trolle, Rob van der Goot</p>
+                    </div>
+                    
+                    <div class="paper-item">
+                        <p class="paper-title">Korean Stereotype Content Model: Translating Stereotypes Across Cultures</p>
+                        <p class="paper-author">Michelle YoungJin Kim and Kristen Johnson</p>
+                    </div>
+                    
+                    <div class="paper-item">
+                        <p class="paper-title">LLM-C3MOD: A Human-LLM Collaborative System for Cross-Cultural Hate Speech Moderation</p>
+                        <p class="paper-author">Junyeong Park, Seogyeong Jeong, Seyoung Song, Yohan Lee and Alice Oh</p>
+                    </div>
+                    
+                    <div class="paper-item">
+                        <p class="paper-title">One world, one opinion? The superstar effect in LLM responses</p>
+                        <p class="paper-author">Sofie Goethals and Lauren Rhue</p>
+                    </div>
+                    
+                    <div class="paper-item">
+                        <p class="paper-title">Towards Region-aware Bias Evaluation Metrics</p>
+                        <p class="paper-author">Angana Borah, Aparna Garimella and Rada Mihalcea</p>
+                    </div>
+                    
+                    <div class="paper-item">
+                        <p class="paper-title">Cross-Cultural Differences in Mental Health Expressions on Social Media</p>
+                        <p class="paper-author">Sunny Rai, Khushi Shelat, Devansh Jain, Kishen Sivabalan, Young Min Cho, Maitreyi Redkar, Samindara Hardikar-Sawant, Lyle Ungar, Sharath Chandra Guntuku</p>
+                    </div>
+                    
+                    <div class="paper-item">
+                        <p class="paper-title">WHEN TOM EATS KIMCHI: Evaluating Cultural Awareness of Multimodal Large Language Models in Cultural Mixture Contexts</p>
+                        <p class="paper-author">Jun Seong Kim, Kyaw Ye Thu, Javad Ismayilzada, Junyeong Park, Eunsu Kim, Huzama Ahmad, Na Min An, James Thorne, Alice Oh</p>
+                    </div>
+                </div>
+
+                <h3 class="category-heading">Non-Archival</h3>
+                
+                <div class="paper-list">
+                    <div class="paper-item">
+                        <p class="paper-title">Building Better: Avoiding Pitfalls in Developing Language Resources when Data is Scarce</p>
+                        <p class="paper-author">Nedjma Ousidhoum, Meriem Beloucif, Saif M. Mohammad</p>
+                    </div>
+                    
+                    <div class="paper-item">
+                        <p class="paper-title">Diffusion Models Through a Global Lens: Are They Culturally Inclusive?</p>
+                        <p class="paper-author">Zahra Bayramli, Ayhan Suleymanzade, Na Min An, Huzama Ahmad, Eunsu Kim, Junyeong Park, James Thorne, Alice Oh</p>
+                    </div>
+                    
+                    <div class="paper-item">
+                        <p class="paper-title">Detecting Offensive Memes with Social Biases in Singapore Context Using Multimodal Large Language Model</p>
+                        <p class="paper-author">Yuxuan Cao, Jiayang Wu, Alistair Cheong Liang Chuen, Bryan Shan Guanrong, Theodore Lee Chong Jen, Sherman Chann</p>
+                    </div>
+                    
+                    <div class="paper-item">
+                        <p class="paper-title">Hire Your Anthropologist! Towards Cultural Benchmarks Through an Anthropological Lens</p>
+                        <p class="paper-author">Mai Alkhamissi, Yunze Xiao, Badr AlKhamissi, Mona T. Diab</p>
+                    </div>
+                    
+                    <div class="paper-item">
+                        <p class="paper-title">Uplifting Lower-Income Data: Strategies for Socioeconomic Perspective Shifts in Large Multi-modal Models</p>
+                        <p class="paper-author">Joan Nwatu, Oana Ignat, Rada Mihalcea</p>
+                    </div>
+                    
+                    <div class="paper-item">
+                        <p class="paper-title">Evaluating Cultural and Social Awareness of LLM Web Agents</p>
+                        <p class="paper-author">Haoyi Qiu, Alexander Fabbri, Divyansh Agarwal, Kung-Hsiang Huang, Sarah Tan, Nanyun Peng, Chien-Sheng Wu</p>
+                    </div>
+                    
+                    <div class="paper-item">
+                        <p class="paper-title">Specializing Large Language Models to Simulate Survey Response Distributions for Global Populations</p>
+                        <p class="paper-author">Yong Cao, Haijiang Liu, Arnav Arora, Isabelle Augenstein, Paul Röttger, Daniel Hershcovich</p>
+                    </div>
+                    
+                    <div class="paper-item">
+                        <p class="paper-title">Culture-TRIP: Culturally-Aware Text-to-Image Generation with Iterative Prompt Refinement</p>
+                        <p class="paper-author">Suchae Jeong, Inseong Choi, Youngsik Yun, Jihie Kim</p>
+                    </div>
+                    
+                    <div class="paper-item">
+                        <p class="paper-title">Multi3Hate: Multimodal, Multilingual, and Multicultural Hate Speech Detection with Vision-Language Models</p>
+                        <p class="paper-author">Minh Duc Bui, Katharina von der Wense, Anne Lauscher</p>
+                    </div>
+                    
+                    <div class="paper-item">
+                        <p class="paper-title">Designing Speech Technologies for Australian Aboriginal English: Opportunities, Risks and Participation</p>
+                        <p class="paper-author">Ben Hutchinson, Celeste Rodríguez Louro, Glenys Collard, Ned Cooper</p>
+                    </div>
+                    
+                    <div class="paper-item">
+                        <p class="paper-title">IndoCulture: Exploring Geographically Influenced Cultural Commonsense Reasoning Across Eleven Indonesian Provinces</p>
+                        <p class="paper-author">Fajri Koto, Rahmad Mahendra, Nurul Aisyah, Timothy Baldwin</p>
+                    </div>
+                    
+                    <div class="paper-item">
+                        <p class="paper-title">Beyond Words: Exploring Cultural Value Sensitivity in Multimodal Models</p>
+                        <p class="paper-author">Srishti Yadav, Zhi Zhang, Daniel Hershcovich, Ekaterina Shutova</p>
+                    </div>
+                    
+                    <div class="paper-item">
+                        <p class="paper-title">Mind the Gesture: Evaluating AI Sensitivity to Culturally Offensive Non-Verbal Gestures</p>
+                        <p class="paper-author">Akhila Yerukola, Saadia Gabriel, Nanyun Peng, Maarten Sap</p>
+                    </div>
+                    
+                    <div class="paper-item">
+                        <p class="paper-title">HistoryRE: A Reasoning-Guided and Knowledge-Enhanced Prompt Learning Approach for Relation Extraction in Ancient Chinese Documents</p>
+                        <p class="paper-author">Zhengda Zhou, Hao Wang, Ruizhe Shi, Haohan Yi, Xuhui Zheng, Tianchen Yao, Shu Zhou</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
   <style>
 .workshop-link {
     font-size: 18px;
