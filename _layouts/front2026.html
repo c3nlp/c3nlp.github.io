@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% include 2026/head.html %}
+</head>
+
+<body id="page-top">
+  {% include 2026/nav.html %}
+  {% include 2026/cfp.html %}
+  {% include 2026/dates.html %}
+  <!-- {% include 2026/schedule.html %} -->
+  <!-- {% include 2026/speakers.html %} -->
+  {% include 2026/organizers.html %}
+  {% include 2026/sponsorship.html %}
+  <!-- {% include 2026/accept_papers.html %} -->
+  {% include 2026/previous.html %}
+  {% include 2026/albums.html %}
+  {% include 2026/contact.html %}
+
+  <script>
+    $(document).ready(function() {
+      $('.navbar-collapse').removeClass('in');
+      $('.navbar-collapse').css('height', 'auto');
+    });
+  </script>
+</body>
+</html>
